@@ -1,181 +1,213 @@
-@import url(http://fonts.googleapis.com/css?family=Gabriela);
+	@import url(http://fonts.googleapis.com/css?family=Gabriela);
 
-/* pocetna */
+	/* pocetna */
 
-/*outline treba za okvir za neke novosti itd*/
+	/*outline treba za okvir za neke novosti itd*/
 
-/*slika logo*/
+	/*slika logo*/
 
-*{
-margin:0;
-padding: 0;
-}
+	*{
+	margin:0;
+	padding: 0;
+	border:0;
+	}
 
-#telo{
-font-family:Arial, Helvetica, sans-serif;
-}
+	#tijelo{
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	}
 
-#pozadina{
-z-index: -999;
-  min-height: 100%;
-  min-width: 1024px;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity:0.6;
-}
-
-#linklogo {
+	header {
+	margin:0 15%;
 	position:relative;
-    margin:0 auto;
+	height:50px;
+	background:#f7745a;
+	z-index:10;
+	overflow:hidden;
+	}
+
+	#banner{
+	position:relative;
 	width:766px;
-  display: block;
-}
-
-#linklogo:link, #linklogo:visited {
-    display: block;
-  }
-
-#linklogo:hover, #linklogo:active {
-}
-
-
-/*navigation bar*/
-
-
-#navbar {
-position: relative;
-width: 860px;
-white-space:nowrap;
-margin:0 auto;
-display:block;
-
-}
-
-#navbar ul {
-position:relative;
-margin:auto;
-    list-style-type: none;
-    padding: 0;
-	overflow:hidden;
-	
-}
-
-#navbar li {
-    display:inline-block;
+	height:312px;
 	margin:0 auto;
-}
+	}
 
-#navbar a{
-display:block;
-width:200px;
-}
-
-#navbar  a:link, a:visited {
-    display: block;
-    width: 200px;
-    font-weight: bold;
-    color: #FFFFFF;
-    background-color: #f7745a;
-    text-align: center;
-    padding: 8px 0px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-#navbar a:hover, a:active {
-    background-color: #6e301a;
-}
+	#pozadina{
+	z-index: -999;
+	  min-height: 100%;
+	  min-width: 1024px;
+	  width: 100%;
+	  height: auto;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  opacity:0.6;
+	}
 
 
-/* sadrzaj ispod nav bara*/
-
-#sadrzaj h1{
-color:#6e301a;
-border-top:5px solid #6e301a;
-border-bottom:5px solid #6e301a;
-width:100%;
-display:block;
-margin: 30px auto;
-position:relative;
-padding-top:5px;
-padding-bottom:5px;
-text-align:center;
-}
-
-#novosti {
-color:#6e301a;
-position:relative;
-margin:auto;
-padding:30px 10px;
-text-align:justify;
-width:860px;
-outline: 5px solid #6e301a;
-}
-
-#detaljnije:link,#detaljnije:visited {
-color:#6e301a;
-font-weight:bold;
-text-align:right;
-text-decoration:none;
-text-height:55px;
-float:right;
-font-size:18px;
-}
+	#linklogo:link, #linklogo:visited {
+		display: block;
+	  }
 
 
-#detaljnije:hover, #detaljnije:active {
-background-color:#f7745a;
-}
+
+	/*navigation bar*/
 
 
-/* dole navbar skroz*/
-
-#navbardole {
-position: relative;
-width: 860px;
-white-space:nowrap;
-margin:0 auto;
-display:block;
-
-}
-
-#navbardole ul {
-position:fixed;
-bottom:0px;
-    list-style-type: none;
-    padding: 0;
-	overflow:hidden;
-	
-}
-
-#navbardole li {
-    display:inline-block;
+	#navbar {
+	position: relative;
+	width: 70%;
+	white-space:nowrap;
 	margin:0 auto;
-}
+	display:block;
+	
+	}
+
+	#navbar ul {
+	position:relative;
+	list-style-type: none;
+	padding: 0;
+	margin:0;		
+	}
+
+	#navbar li {
+	display:inline-block;
+	margin:0 auto;
+	}
+
+	#navbar a{
+	display:block;
+	width:182px;
+	text-align: center;
+	padding: 16px 0px;
+	text-decoration: none;
+	text-transform: uppercase;
+	}
+
+	#navbar  a:link, a:visited {
+		display: block;
+		width:182px;
+		font-weight: bold;
+		color: #FFFFFF;
+		background-color: #f7745a;
+		
+	}
+
+	#navbar a:hover, a:active {
+		background-color: #6e301a;
+	}
+
+
+	/* sadrzaj ispod nav bara*/
+
+	
+	h1 {
+	position:relative;
+	text-align:center;
+	color:#6e301a;
+	top:40px;
+	margin:0 auto;
+	}
+	
+	#sadrzaj {
+	position:relative;
+	margin: 80px auto 10px;
+	height:1900px;
+	width:65%;
+	color:#6e301a;
+	padding-bottom:5px;
+	text-align:center;
+	}
+	
+	
+	
+	
+	
+
+	/*#novosti {
+	height:1900px;
+	color:#6e301a;
+	position:relative;
+	margin:auto;
+	padding:30px 10px 5px;
+	text-align:justify;
+	width:860px;
+	outline: 5px solid #6e301a;
+	}
+*/
+	#detaljnije{
+	width:120px;
+	white-space:nowrap;
+	position:relative;
+	display:inline;
+	padding:0;
+	margin:3px auto;
+	}
+
+
+	#detaljnije:link,#detaljnije:visited {
+	color:#6e301a;
+	font-weight:bold;
+	text-align:right;
+	text-decoration:none;
+	font-size:18px;
+	}
+
+
+	#detaljnije:hover, #detaljnije:active {
+	background-color:#f7745a;
+	}
+
+
+	/* dole navbar skroz*/
+
+	#navbardole {
+	position: relative;
+	width: 1000px;
+	white-space:nowrap;
+	margin:0 auto;
+	display:block;
+
+	}
+
+	#navbardole ul {
+	position:fixed;
+	bottom:0px;
+		list-style-type: none;
+		padding: 0;
+		overflow:hidden;
+		
+		
+	}
+
+	#navbardole li {
+		display:inline-block;
+		margin:0 auto;
+		
+	}
 
 
 
-#navbardole a{
-display:block;
-width:200px;
-}
+	#navbardole a{
+	display:block;
+	width:200px;
 
-#navbardole  a:link, a:visited {
-    display: block;
-    width: 200px;
-    font-weight: bold;
-    color: #FFFFFF;
-    background-color: #f7745a;
-    text-align: center;
-    padding: 2px 0px 2px 0px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
+	}
 
-#navbardole a:hover, a:active {
-    background-color: #6e301a;
-}
+	#navbardole  a:link, a:visited {
+		display: block;
+		width: 200px;
+		font-weight: bold;
+		color: #FFFFFF;
+		background-color: #f7745a;
+		text-align: center;
+		padding: 2px 0px 2px 0px;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	#navbardole a:hover, a:active {
+		background-color: #6e301a;
+	}
 
