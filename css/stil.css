@@ -4,7 +4,6 @@
 
 	/*outline treba za okvir za neke novosti itd*/
 
-	/*slika logo*/
 
 	*{
 	margin:0;
@@ -49,10 +48,6 @@
 	position:relative;
 	max-width: 100%;
 	height: auto;
-	/*position:fixed;
-	left:50%;
-	margin-left:-15%;
-	width:30%;*/
 	}
 	
 
@@ -123,6 +118,41 @@
 	text-align:center;
 	}
 	
+	#sadrzaj h3 {
+	margin:10px auto;
+	}
+	
+	#sadrzaj p{
+	position:relative;
+	margin:5px;
+	text-align:left;
+	font-size:80%;
+	font-style:italic;
+	}
+	
+	#sadrzaj ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	}
+	
+	#sadrzaj li{
+	display:block;
+	margin:5px;
+	}
+	
+	#linkovi{
+	text-decoration:none;
+	color:#6e301a;
+	padding:5px;
+	}
+	
+	#linkovi:hover{
+	text-decoration:underline;
+	color:#FFFFFF;
+
+	}
+	
 	
 	#detaljnije{
 	width:120px;
@@ -145,6 +175,7 @@
 
 	#detaljnije:hover, #detaljnije:active {
 	text-decoration:underline;
+	color:#FFFFFF;
 	}
 
 
