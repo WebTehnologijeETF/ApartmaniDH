@@ -4,7 +4,7 @@
 
 	/*outline treba za okvir za neke novosti itd*/
 
-
+	/*pozadina, slika, header, banner*/
 	*{
 	margin:0;
 	padding: 0;
@@ -111,17 +111,20 @@
 	#sadrzaj {
 	position:relative;
 	margin: 80px auto 10px;
-	height:1900px;
+	height:1400px;
 	width:65%;
 	color:#6e301a;
 	padding-bottom:5px;
 	text-align:center;
 	}
 	
+	/*manji naslov*/
+
 	#sadrzaj h3 {
 	margin:10px auto;
 	}
 	
+	/*sadrzaj stranice*/
 	#sadrzaj p{
 	position:relative;
 	margin:5px;
@@ -130,29 +133,35 @@
 	font-style:italic;
 	}
 	
-	#sadrzaj ul{
+	#listalinkova {
+	/*list-style-image:url("beach_chair.png");     PITATI VEDRANA ZA SLIKU DESTINACIJU I ALIGNMENT */
 	list-style-type:none;
-	padding:0;
-	margin:0;
+	margin:10px 40%;
 	}
 	
-	#sadrzaj li{
+	#listalinkova li{
+	background:url("beach_chair.png") no-repeat center left; 
+	padding:10px 0px 5px 35px;
+	}
+	
+	/* linkovi na links.html */
+	#listalinkova a{
+	text-align:left;
+	padding:5px;
 	display:block;
-	margin:5px;
-	}
-	
-	#linkovi{
 	text-decoration:none;
 	color:#6e301a;
-	padding:5px;
+	
+	
 	}
 	
-	#linkovi:hover{
+	#listalinkova a:hover{
 	text-decoration:underline;
 	color:#FFFFFF;
 
 	}
 	
+	/*link detaljnije na index.html, da se otvori dodatni tekst*/
 	
 	#detaljnije{
 	width:120px;
