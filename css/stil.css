@@ -67,7 +67,8 @@
 	position:relative;
 	list-style-type: none;
 	background:#f7745a;
-	margin:0 15%;		
+	margin:0 15%;
+	box-shadow:0 5px 15px #6e301a;	
 	}
 
 	#navbar li {
@@ -125,6 +126,21 @@
 	}
 	
 	/*sadrzaj stranice*/
+	
+	/*tabelu treba fino doraditi, dodati neki background image za tabelu*/
+	table{
+	margin:10px auto;
+	position:relative;
+	border-spacing:5px 0px;
+	min-width:70%;
+	}
+	
+	
+	th, td {
+	text-align:center; 
+	padding:10px;
+}
+	
 	#sadrzaj p{
 	position:relative;
 	margin:5px;
