@@ -114,8 +114,9 @@
 	height:1400px;
 	width:65%;
 	color:#6e301a;
-	padding-bottom:5px;
+	padding:20px;
 	text-align:center;
+	box-shadow: 0 15px 10px #6e301a;
 	}
 	
 	/*manji naslov*/
