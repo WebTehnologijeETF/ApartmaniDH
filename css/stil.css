@@ -129,6 +129,7 @@
 	
 	/*tabelu treba fino doraditi, dodati neki background image za tabelu*/
 	table{
+	font-weight:bold;
 	margin:10px auto;
 	position:relative;
 	border-spacing:5px 0px;
