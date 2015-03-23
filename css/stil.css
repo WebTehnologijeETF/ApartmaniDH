@@ -112,11 +112,11 @@
 	
 	#sadrzaj {
 	position:relative;
-	margin: 80px auto 10px;
+	margin: 60px auto 10px;
 	height:1400px;
 	width:65%;
 	color:#6e301a;
-	padding:20px;
+	padding:10px;
 	text-align:center;
 	}
 	
@@ -124,9 +124,10 @@
 
 	#sadrzaj h3 {
 	margin:10px auto;
-	padding:15px;
-	text-align:left;
+	padding:15px 0 0;
+	text-align:center;
 	}
+	
 	
 	/*sadrzaj stranice*/
 	
@@ -137,15 +138,29 @@
 	position:relative;
 	border-spacing:5px 0px;
 	min-width:70%;
-	padding:15px;
+	padding:10px;
     box-shadow: 0px 0px 15px #000;
 	}
 	
 	#tabela{
 	margin:auto;
-	padding:25px;
+	padding:45px;
 	}
 	
+	/*kolone u tabeli */
+	/*tr #sobe:hover, tr #cijena:hover{
+	background:rgba(255,238,235,0.2);
+	}*/
+	
+	/*da se pozadina kod naslova tabele ne mijenja*/
+	thead tr:hover{
+	background:none;
+	}
+	
+	/*mijenja se pozadina kod redova tabele*/
+	tr:hover {
+	background:rgba(255,238,235,0.2);
+}
 	
 	th, td {
 	text-align:center; 
