@@ -26,6 +26,7 @@
 
 	#pozadina{
 	z-index: -999;
+	background-image:url("../Images/Premade_BK_Stock_259_by_Fairiegoodmother.jpg");
 	background-size:cover;
 	min-height: 100%;
 	min-width: 100px;
@@ -35,7 +36,7 @@
 	top: 0;
 	left: 0;
 	opacity:0.6;
-	}
+	}*/
 	
 	#banner{
 	position:relative;
