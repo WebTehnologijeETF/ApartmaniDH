@@ -133,6 +133,13 @@
 	/*sadrzaj stranice*/
 	
 	/*tabelu treba fino doraditi, dodati neki background image za tabelu*/
+	
+	#news {
+	padding:20px;
+	border:2px solid rgba(155,73,45,0.9);
+	box-shadow:0px 0px 3px rgba(155,73,45,1);
+	}
+	
 	table{
 	font-weight:bold;
 	margin:10px auto;
