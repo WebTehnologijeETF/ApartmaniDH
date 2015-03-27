@@ -45,7 +45,9 @@
 	}
 	
 	#banner{
-	position:relative;
+	position:inherit;
+	min-width:50%;
+	height:auto;
 	}
 
 	
@@ -117,6 +119,7 @@
 	padding-bottom:35px;
 	}
 	
+	/*glavni sadrzaj*/
 	#sadrzaj {
 	position:relative;
 	width:48%;
@@ -154,6 +157,9 @@
 	text-align:justify;
 	}
 	
+	#news:hover {
+	background:rgba(255,238,235,0.2);
+	}
 	
 	#linija1 { 
 	width:48%;
@@ -199,23 +205,78 @@
 	padding:10px;
 }
 
+	/*contact.html */
+	#formakontakta{
+	width:50%;
+	margin:0 auto;
+	min-width:50%;
+	}
 	
+	#textforme{
+	width:20%;
+	margin:0 0 0 -20%;
+	float:left;
+	text-align:left;
+	padding:5px 0;
+	}
+
+	#unos {
+	width:30%;
+	margin:0 0 0 -30%;
+	padding:5px;
+	}
+	
+	#unosteksta{
+	position:relative;
+	margin:0 -25% 0 0;
+	width:100%;
+	max-width:400px;
+	}
+
+	#sabmit{
+	display:inline;
+	width:30%;
+	padding:5px 0;
+	color:#6e301a;
+	font-weight:bold;
+	}
+	
+	#reset{
+	display:inline;
+	width:30%;
+	padding:5px 0;
+	margin:5px;
+	color:#6e301a;
+	font-weight:bold;
+	}
+	
+	#prazan{
+	display:block;
+	padding:5px;
+	}
+	
+	#unos:hover,#unosteksta:hover,#sabmit:hover,#reset:hover{
+	box-shadow:inset 0 0 15px rgba(155,73,45,0.5);
+	}
+
 	
 	
 	/*linkovi na links.html*/
 	#listalinkova {
+	width:60%;
 	list-style-type:none;
 	margin:10px 40%;
 	}
 	
 	#listalinkova li{
-	background:url("beach_chair.png") no-repeat center left; 
-	padding:10px 0px 5px 35px;
+	
+	background:url("beach_chair.png") no-repeat center left;
+	padding:15px 0px 5px 35px;
 	}
 	
 	#listalinkova a{
 	text-align:left;
-	padding:5px;
+	padding:10px 0;
 	display:block;
 	text-decoration:none;
 	color:#6e301a;
