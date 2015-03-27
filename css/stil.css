@@ -10,6 +10,12 @@
 	padding: 0;
 	border:0;
 	}
+	
+	/*da se slike srazmjerno smanjuju/povecavaju*/
+	img {
+	max-height:100%;
+	max-width:100%;
+	}
 
 	#tijelo{
 	font-family:Arial, Helvetica, sans-serif;
@@ -36,7 +42,7 @@
 	top: 0;
 	left: 0;
 	opacity:0.6;
-	}*/
+	}
 	
 	#banner{
 	position:relative;
@@ -86,11 +92,11 @@
 	}
 
 	#navbar  a:link, a:visited {
-		display:block;
-		width:180px;
-		font-weight: bold;
-		color: #FFFFFF;
-		background-color: #f7745a;
+	display:block;
+	width:180px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #f7745a;
 		
 	}
 
@@ -113,52 +119,70 @@
 	
 	#sadrzaj {
 	position:relative;
-	margin: 60px auto 10px;
-	height:1400px;
-	width:65%;
+	width:48%;
+	margin: 50px auto 10px;
+	height:800px;
 	color:#6e301a;
 	padding:10px;
 	text-align:center;
 	}
 	
+
 	/*manji naslov*/
 
 	#sadrzaj h3 {
 	margin:10px auto;
-	padding:15px 0 0;
+	padding:10px 0 0;
 	text-align:center;
 	}
 	
+	#autor{
+	position:relative;
+	margin:5px;
+	text-align:left;
+	font-size:80%;
+	font-style:italic;
+	}
 	
 	/*sadrzaj stranice*/
-	
-	/*tabelu treba fino doraditi, dodati neki background image za tabelu*/
 	
 	#news {
 	padding:20px;
 	border:2px solid rgba(155,73,45,0.9);
 	box-shadow:0px 0px 3px rgba(155,73,45,1);
+	font-size:90%;
+	text-align:justify;
 	}
 	
+	
+	#linija1 { 
+	width:48%;
+	margin:40px auto 0;
+	background-color:rgba(155,73,45,0.25);
+	height: 1px;}
+	
+	#linija { 
+	margin:50px auto 25px;
+	display:block;
+	background-color:rgba(155,73,45,0.4);
+	height: 1px;
+}
+	
 	table{
+	color:#54210f;
 	font-weight:bold;
-	margin:10px auto;
 	position:relative;
 	border-spacing:0px;
-	min-width:70%;
 	padding:10px;
-    box-shadow: 0px 0px 15px #000;
+    box-shadow: 0px 0px 10px rgba(84,35,17,1);
 	}
 	
 	#tabela{
-	margin:auto;
+	height:800px;
+	width:48%;
+	margin:0 auto;
 	padding:45px;
 	}
-	
-	/*kolone u tabeli */
-	/*tr #sobe:hover, tr #cijena:hover{
-	background:rgba(255,238,235,0.2);
-	}*/
 	
 	/*da se pozadina kod naslova tabele ne mijenja*/
 	thead tr:hover{
@@ -176,16 +200,10 @@
 }
 
 	
-	#sadrzaj p{
-	position:relative;
-	margin:5px;
-	text-align:left;
-	font-size:80%;
-	font-style:italic;
-	}
 	
+	
+	/*linkovi na links.html*/
 	#listalinkova {
-	/*list-style-image:url("beach_chair.png");     PITATI VEDRANA ZA SLIKU DESTINACIJU I ALIGNMENT */
 	list-style-type:none;
 	margin:10px 40%;
 	}
@@ -195,21 +213,17 @@
 	padding:10px 0px 5px 35px;
 	}
 	
-	/* linkovi na links.html */
 	#listalinkova a{
 	text-align:left;
 	padding:5px;
 	display:block;
 	text-decoration:none;
 	color:#6e301a;
-	
-	
 	}
 	
 	#listalinkova a:hover{
 	text-decoration:underline;
 	color:#FFFFFF;
-
 	}
 	
 	/*link detaljnije na index.html, da se otvori dodatni tekst*/
@@ -251,11 +265,9 @@
 	#navbardole ul {
 	position:fixed;
 	bottom:0px;
-		list-style-type: none;
-		padding: 0;
-		overflow:hidden;
-		
-		
+	list-style-type: none;
+	padding: 0;
+	overflow:hidden;	
 	}
 
 	#navbardole li {
@@ -273,18 +285,27 @@
 	}
 
 	#navbardole  a:link, a:visited {
-		display: block;
-		width: 200px;
-		font-weight: bold;
-		color: #FFFFFF;
-		background-color: #f7745a;
-		text-align: center;
-		padding: 2px 0px 2px 0px;
-		text-decoration: none;
-		text-transform: uppercase;
+	display: block;
+	width: 200px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #f7745a;
+	text-align: center;
+	padding: 2px 0px 2px 0px;
+	text-decoration: none;
+	text-transform: uppercase;
 	}
 
 	#navbardole a:hover, a:active {
-		background-color: #6e301a;
+	background-color: #6e301a;
 	}
 
+	footer {
+	position:fixed;
+	bottom:0;
+	margin-left:10%;
+	font-weight:500;
+	font-size:15px;
+	text-align:left;
+	color:#6e301a;
+	}
