@@ -22,13 +22,6 @@
 	text-align:center;
 	}
 
-	/*header {
-	position:fixed;
-	left:50%;
-	margin-left:-35%;
-	width:70%;
-	z-index:10;
-	}*/
 
 	#pozadina{
 	z-index: -999;
@@ -45,9 +38,11 @@
 	}
 	
 	#banner{
-	position:inherit;
-	min-width:50%;
-	height:auto;
+	position:relative;
+	width:38%;
+	min-width:38%;
+	margin:0 auto;
+	margin-bottom:30px;
 	}
 
 	
@@ -55,8 +50,10 @@
 	
 	#logo{
 	position:relative;
+	margin-top:5%;
 	max-width: 100%;
 	height: auto;
+	white-space:nowrap;
 	}
 	
 
@@ -66,7 +63,7 @@
 
 	#navbar {
 	position:fixed;
-	width: 50%;	
+	width: 50%;
 	display:block;
 	z-index:10;
 	background:#f7745a;
@@ -78,10 +75,11 @@
 
 	#navbar ul {
 	width:100%;
-	white-space:nowrap;
+	min-width:100%;
 	list-style-type: none;
 	display:flex;
 	height:50px;
+	white-space:nowrap;
 	}
 
 	#navbar li {
@@ -89,7 +87,7 @@
 	width:20%;
 	height:50px;
 	text-align:center;
-	white-space:nowrap;
+	
 	}
 
 	#navbar a{
@@ -231,23 +229,27 @@
 	
 	#textforme{
 	width:20%;
+	min-width:20%;
 	margin:0 0 0 -20%;
-	float:left;
+	
 	text-align:left;
 	padding:5px 0;
+	white-space:nowrap;
 	}
 
 	#unos {
+	display:block;
 	width:30%;
-	margin:0 0 0 -30%;
+	min-width:30%;
+	margin:0 35%;
 	padding:5px;
 	}
 	
 	#unosteksta{
 	position:relative;
-	margin:0 -25% 0 0;
+	display:block;
+	/*margin:0 0 0 15%;*/
 	width:100%;
-	max-width:400px;
 	}
 
 	#sabmit{
