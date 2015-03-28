@@ -228,10 +228,11 @@
 	}
 	
 	#textforme{
+	display:block;
 	width:20%;
 	min-width:20%;
-	margin:0 0 0 -20%;
-	
+	margin:0 0 0 15%;
+	font-weight:bold;
 	text-align:left;
 	padding:5px 0;
 	white-space:nowrap;
@@ -241,32 +242,36 @@
 	display:block;
 	width:30%;
 	min-width:30%;
-	margin:0 35%;
+	margin:0 0 0 15%;
 	padding:5px;
+	border:1px solid rgba(155,73,45,0.9);
 	}
 	
 	#unosteksta{
 	position:relative;
 	display:block;
-	/*margin:0 0 0 15%;*/
+	margin:0 0 0 15%;
 	width:100%;
+	border:1px solid rgba(155,73,45,0.9);
 	}
 
 	#sabmit{
-	display:inline;
+	display:inline-block;
 	width:30%;
 	padding:5px 0;
 	color:#6e301a;
 	font-weight:bold;
+	border:1px solid rgba(155,73,45,0.9);
 	}
 	
 	#reset{
-	display:inline;
+	display:inline-block;
 	width:30%;
 	padding:5px 0;
 	margin:5px;
 	color:#6e301a;
 	font-weight:bold;
+	border:1px solid rgba(155,73,45,0.9);
 	}
 	
 	#prazan{
