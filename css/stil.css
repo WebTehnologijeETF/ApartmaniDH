@@ -1,8 +1,4 @@
-	@import url(http://fonts.googleapis.com/css?family=Gabriela);
-
 	/* pocetna */
-
-	/*outline treba za okvir za neke novosti itd*/
 
 	/*pozadina, slika, header, banner*/
 	*{
@@ -64,6 +60,7 @@
 	#navbar {
 	position:fixed;
 	width: 50%;
+	min-width:603px;
 	display:block;
 	z-index:10;
 	background:#f7745a;
@@ -90,6 +87,7 @@
 	#navbar a{
 	display:block;
 	width:100%;
+	min-width:150px;
 	text-align: center;
 	font-size:100%;
 	padding: 16px 0px;
@@ -162,7 +160,7 @@
 	/*sadrzaj stranice*/
 	
 	#news {
-	padding:20px;
+	padding:30px;
 	border:2px solid rgba(155,73,45,0.9);
 	box-shadow:0px 0px 3px rgba(155,73,45,1);
 	font-size:100%;
@@ -238,7 +236,7 @@
 	#unos {
 	display:block;
 	width:30%;
-	min-width:30%;
+	min-width:150px;
 	margin:0 0 0 15%;
 	padding:5px;
 	border:1px solid rgba(155,73,45,0.9);
@@ -249,12 +247,14 @@
 	display:block;
 	margin:0 0 0 15%;
 	width:100%;
+	min-width:150px;
 	border:1px solid rgba(155,73,45,0.9);
 	}
 
 	#sabmit{
 	display:inline-block;
 	width:30%;
+	min-width:50px;
 	padding:5px 0;
 	color:#6e301a;
 	font-weight:bold;
@@ -264,6 +264,7 @@
 	#reset{
 	display:inline-block;
 	width:30%;
+	min-width:50px;
 	padding:5px 0;
 	margin:5px;
 	color:#6e301a;
