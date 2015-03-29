@@ -72,6 +72,7 @@
 	#navbar ul {
 	width:100%;
 	min-width:100%;
+	min-width:603px;
 	list-style-type: none;
 	display:flex;
 	height:50px;
@@ -81,6 +82,7 @@
 	#navbar li {
 	display:inline-block;
 	width:20%;
+	min-width:150px;
 	height:50px;	
 	}
 
