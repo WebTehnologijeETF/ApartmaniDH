@@ -131,7 +131,7 @@ function odobriMail(){
 }
 
 function validirajEmail(email) {
- var re = /\S+@\S+\.\S+/;
+ var re = /^[a-z\._0-9]+@[a-z]+\.[a-z]{2,4}$/;
  return re.test(email);
  }
  
