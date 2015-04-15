@@ -18,7 +18,12 @@
 	<ul>
 	  <li><a href="index.html">Home</a></li>
 	  <li><a href="accommodation.html">Accommodation</a></li>
-	  <li><a href="gallery.html">Gallery</a></li>
+	   <li onmouseover="showMenu()" onmouseout="hideMenu()"><a href="gallery.html" >Gallery</a>
+			<ul id="menu" onmouseover="showMenu()" >
+				<li><a href="#">Orebic</a></li>
+				<li><a href="#">Apartments</a></li>
+			</ul>
+			</li>
 	  <li><a id="contactlink" href="contact.html">Contact</a></li>
 	  <li><a href="links.html">Links</a></li>
 	</ul>
@@ -46,16 +51,16 @@
 	<input class="unos" type="text" name="prezime">
 	<div class="prazan">  </div>
 	
-	<div class="textforme"> E-mail:</div>
+	<div class="textforme"> E-mail:*</div>
   	<input class="unos" type="email" name="email">
 	<div class="prazan">  </div>
 	
-	<div class="textforme"> Message:</div>
+	<div class="textforme"> Message:*</div>
 	<textarea id="unosteksta" name="poruka" rows="8" cols="1">
 	</textarea>
 	<div class="prazan">  </div>
 	
-	<input id="sabmit" type="submit" value="Submit">
+	<input id="sabmit" onclick="return validacija()" type="submit" value="Submit">
 	<input id="reset" type="reset" value="Reset">
 	</form>
 	
@@ -74,7 +79,7 @@
 	</div>
 <footer> Copyleft &copy; by Dino Hurem.</footer>
 	</div>
-
+<script src="skripta.js"> </script>
 	</body>
 
 	</html>
