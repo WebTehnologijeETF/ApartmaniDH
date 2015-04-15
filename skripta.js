@@ -137,15 +137,17 @@ function validirajEmail(email) {
  
  function validirajIme(ime)
 {
-    if(ime=="" || ime==null)
+	var re=/^[a-zšđčćž]+$/i;
+	return re.test(ime);
+    /*if(ime=="" || ime==null)
         return false;
     
-    return true;
+    return true;*/
 }
 
 function validirajTekst(tekst)
 {
-    if(tekst=="" || tekst==null)
+	if(tekst=="" || tekst==null)
         return false;
     
     return true;
