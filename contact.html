@@ -43,16 +43,16 @@
 	
 	<form id="formakontakta">
 	
-	<label for "ime" > First name:*</label>
+	<label for="unosime"> First name:*</label>
 	<input class="unos" onchange="odobriIme()" id="unosime" type="text" name="ime" placeholder="First name" title="Field is required."><div id="errorime"></div>
 	
-	<label for "prezime"> Last name:</label>
-	<input class="unos" type="text" name="prezime" placeholder="Last name" title="Field is optional."><div id="errorprezime"></div>
+	<label for="prezime"> Last name:</label>
+	<input class="unos" type="text" id="prezime" name="prezime" placeholder="Last name" title="Field is optional."><div id="errorprezime"></div>
 	
-	<label for "email" > E-mail:*</label>
+	<label for="mejl"> E-mail:*</label>
   	<input class="unos" id="mejl" onchange="odobriMail()" onmouseout="odobri()" type="email" name="email" placeholder="mail@example.com" title="Field is required."><div id="errormail"> </div>
 	
-	<label for "poruka" id="porukalabela">Write a message to us:</label>
+	<label for="unosteksta" id="porukalabela">Write a message to us:</label>
 	<textarea id="unosteksta" name="poruka" rows="8" cols="1" placeholder="Please enter the name and e-mail correctly to type here..."></textarea><div id="errortekst"> </div>
 	
 	<input id="sabmit" onClick="return validiraj()" type="submit" value="Submit">
