@@ -76,11 +76,20 @@ function showMenu(){
 		document.getElementById("errortekst").innerHTML = "Please enter a message.";
 		return false;
 		}
+		
+		document.getElementById("errorime").innerHTML = "Please enter a valid name.";
+		document.getElementById("errormail").innerHTML = "Please enter a valid e-mail.";
+		document.getElementById("errortekst").innerHTML = "Please enter a message.";
+		
+		return false;
 	 }
 	 
 	 
 	 else {
 		 
+		 document.getElementById("errorime").innerHTML = "";
+		document.getElementById("errormail").innerHTML = "";
+		document.getElementById("errortekst").innerHTML = "";
 		 return true;
 		 
 	 }
@@ -141,6 +150,8 @@ function validirajTekst(tekst)
     
     return true;
 }
+
+
 
 function resetsve(){
 	document.getElementById("errormail").innerHTML = "";
