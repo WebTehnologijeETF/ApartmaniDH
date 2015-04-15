@@ -139,11 +139,7 @@ function validirajEmail(email) {
 {
 	var re=/^[a-zšđčćž]+$/i;
 	return re.test(ime);
-    /*if(ime=="" || ime==null)
-        return false;
-    
-    return true;*/
-}
+    }
 
 function validirajTekst(tekst)
 {
