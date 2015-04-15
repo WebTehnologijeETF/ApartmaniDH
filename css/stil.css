@@ -124,7 +124,7 @@
 	
 	/*submenu*/
 	
-	#menu{
+	#submenu{
 	display:none;
 	width:100%;
 	min-width:100%;
@@ -134,14 +134,14 @@
     transition: 0.5s;
 }
 
-#menu li{
+#submenu li{
 	display:none;
 	width:32%;
 	min-width:150px;
 	height:50px;
 }
 
-#menu a{
+#submenu a{
 
 	transition: 0.2s;
 	display:block;
@@ -277,45 +277,52 @@
 
 	/*contact.html */
 	#formakontakta{
-	width:50%;
+	width:60%;
 	margin:0 auto;
-	min-width:50%;
+	min-width:60%;
 	}
 	
-	.textforme{
-	display:block;
-	width:20%;
-	min-width:20%;
-	margin:0 0 0 15%;
-	font-weight:bold;
-	text-align:left;
-	padding:5px 0;
-	white-space:nowrap;
-	}
 
 	.unos {
-	display:block;
-	width:30%;
-	min-width:150px;
-	margin:0 0 0 15%;
+	display:inline-block;
+	width:22%;
+	min-width:22%;
 	padding:5px;
 	border:1px solid rgba(155,73,45,0.9);
+	}
+	
+	label{
+	white-space:nowrap;
+	display:inline-block;
+	min-width:120px;
+	width:120px;
+	padding:15px;
+	font-weight:bold;
+	font-size:0.9em;
+	text-align:right;
+	}
+	
+	#porukalabela{
+	display:inline-block;
+	min-width:120px;
+	width:120px;
+	text-align:right;
 	}
 	
 	#unosteksta{
 	position:relative;
 	display:block;
-	margin:0 0 0 15%;
 	width:100%;
+	max-width:100%;
 	min-width:150px;
 	border:1px solid rgba(155,73,45,0.9);
 	}
 
 	#sabmit{
 	display:inline-block;
-	width:30%;
-	min-width:50px;
-	padding:5px 0;
+	width:137px;
+	min-width:137px;
+	padding:5px;
 	color:#6e301a;
 	font-weight:bold;
 	border:1px solid rgba(155,73,45,0.9);
@@ -323,24 +330,29 @@
 	
 	#reset{
 	display:inline-block;
-	width:30%;
-	min-width:50px;
-	padding:5px 0;
+	width:137px;
+	min-width:137px;
+	padding:5px;
 	margin:5px;
 	color:#6e301a;
 	font-weight:bold;
 	border:1px solid rgba(155,73,45,0.9);
 	}
 	
-	.prazan{
-	display:block;
-	padding:5px;
-	}
 	
 	.unos:hover,#unosteksta:hover,#sabmit:hover,#reset:hover{
 	box-shadow:inset 0 0 15px rgba(155,73,45,0.5);
 	}
 
+	#errorime,#errorprezime,#errormail,#errortekst{
+	background:url("../Images/red_cross.png") no-repeat;
+	width:210px;
+	min-width:210px;
+	white-space:nowrap;
+	color:red;
+	text-align:right;
+	display:inline-block;
+	}
 	
 	
 	/*linkovi na links.html*/
