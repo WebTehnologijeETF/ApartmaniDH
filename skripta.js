@@ -31,70 +31,7 @@ function showMenu(){
  }
  
  function validiraj(){
-	 var email = document.getElementById("mejl").value;
-	 var ime=document.getElementById("unosime").value;
-	 var tekst=document.getElementById("unosteksta").value;
-	 
-	 if(!validirajIme(ime) || !validirajEmail(email) || !validirajTekst(tekst)){
-		 
-		 if(!validirajIme(ime) && validirajEmail(email) && validirajTekst(tekst)){
-		document.getElementById("errormail").innerHTML = "";
-		 document.getElementById("errorime").innerHTML = "Please enter a valid name.";
-		 document.getElementById("errortekst").innerHTML = "";
-		 return false;
-		 }
-		else if(validirajIme(ime) && !validirajEmail(email) && validirajTekst(tekst)){
-			document.getElementById("errorime").innerHTML = "";
-		 document.getElementById("errormail").innerHTML = "Please enter a valid e-mail.";
-		 document.getElementById("errortekst").innerHTML = "";
-		 return false;
-		}
-		else if (!validirajIme(ime) && !validirajEmail(email) && validirajTekst(tekst)){
-		document.getElementById("errorime").innerHTML = "Please enter a valid name.";
-		document.getElementById("errormail").innerHTML = "Please enter a valid e-mail.";
-		document.getElementById("errortekst").innerHTML = "";
-		return false;
-		}
-		
-		else if (!validirajIme(ime) && validirajEmail(email) && !validirajTekst(tekst)){
-		document.getElementById("errorime").innerHTML = "Please enter a valid name.";
-		document.getElementById("errormail").innerHTML = "";
-		document.getElementById("errortekst").innerHTML = "Please enter a message.";
-		return false;
-		}
-		
-		else if (validirajIme(ime) && !validirajEmail(email) && !validirajTekst(tekst)){
-		document.getElementById("errorime").innerHTML = "";
-		document.getElementById("errormail").innerHTML = "Please enter a valid e-mail.";
-		document.getElementById("errortekst").innerHTML = "Please enter a message.";
-		return false;
-		}
-		
-		else if (validirajIme(ime) && validirajEmail(email) && !validirajTekst(tekst)){
-		document.getElementById("errorime").innerHTML = "";
-		document.getElementById("errormail").innerHTML = "";
-		document.getElementById("errortekst").innerHTML = "Please enter a message.";
-		return false;
-		}
-		
-		document.getElementById("errorime").innerHTML = "Please enter a valid name.";
-		document.getElementById("errormail").innerHTML = "Please enter a valid e-mail.";
-		document.getElementById("errortekst").innerHTML = "Please enter a message.";
-		
-		return false;
-	 }
-	 
-	 
-	 else {
-		 
-		 document.getElementById("errorime").innerHTML = "";
-		document.getElementById("errormail").innerHTML = "";
-		document.getElementById("errortekst").innerHTML = "";
-		 return true;
-		 
-	 }
-	 
-	 	 
+	 return(odobri() && odobriIme() && odobriMail() && odobriTekst() && drzavaValidirana);
 }
 
 
@@ -103,31 +40,53 @@ function odobri(){
 	var email = document.getElementById("mejl").value;
 	var tekst=document.getElementById("unosteksta");
 	var ime=document.getElementById("unosime").value;
-	if(validirajEmail(email) && validirajIme(ime)){
+	if(validirajEmail(email) && validirajIme(ime) && odobriIme() && odobriMail()){
 		document.getElementById("errortekst").innerHTML="";
   tekst.disabled=false;
+  return true;
 	}
 
 else{
 	tekst.disabled=true;
 	document.getElementById("errortekst").innerHTML="Name and/or mail missing!";
+	return false;
 }
 }
 
 function odobriIme(){
 	var ime=document.getElementById("unosime").value;
-	if(validirajIme(ime))
-		document.getElementById("errorime").innerHTML="";
-	else 
-		document.getElementById("errorime").innerHTML="Please enter a valid name.";
+	if(validirajIme(ime)){
+	document.getElementById("errorime").innerHTML="";
+	return true;
+	}
+	else {
+	document.getElementById("errorime").innerHTML="Please enter a valid name.";
+	return false;
+	}
 }
 
 function odobriMail(){
 	var email=document.getElementById("mejl").value;
-	if(validirajEmail(email))
-		document.getElementById("errormail").innerHTML="";
-	else 
+	if(validirajEmail(email)){
+	document.getElementById("errormail").innerHTML="";
+	return true;
+	}
+	else {
 		document.getElementById("errormail").innerHTML="Please enter a valid mail.";
+		return false;
+	}
+}
+
+function odobriTekst(){
+	var tekst=document.getElementById("unosteksta").value;
+	if(validirajTekst(tekst)){
+	document.getElementById("errortekst").innerHTML="";
+	return true;
+	}
+	else {
+		document.getElementById("errortekst").innerHTML="Please include a message.";
+		return false;
+	}
 }
 
 function validirajEmail(email) {
@@ -144,15 +103,56 @@ function validirajEmail(email) {
 function validirajTekst(tekst)
 {
 	if(tekst=="" || tekst==null)
-        return false;
-    
+    return false;
+
     return true;
 }
 
 
 
+var drzavaValidirana = false;
+
+function odobriDrzavu(){
+	return(validirajDrzavu());
+}
+
+function validirajDrzavu(){
+	var country=document.getElementById("country").value
+	
+	 
+	var req=new XMLHttpRequest();
+
+	req.onreadystatechange=function(){
+		if(req.readyState==4 && req.status==200){
+			var response=JSON.parse(req.responseText);
+			document.getElementById("errordrzava").innerHTML="";
+			document.getElementById("country").value=response[0].name;					
+			drzavaValidirana=true;
+			return true;
+			
+			
+		}
+		else if(req.status==404){
+			document.getElementById("errordrzava").innerHTML="Please enter a valid country.";
+			drzavaValidirana=false;
+			return false;
+		}
+		
+	}
+	
+	var url="https://restcountries.eu/rest/v1/name/"+country;
+	req.open("GET",url,true);
+	req.send();
+}
+
 function resetsve(){
 	document.getElementById("errormail").innerHTML = "";
 	document.getElementById("errorime").innerHTML = "";
 	document.getElementById("errortekst").innerHTML="";
+	document.getElementById("errordrzava").innerHTML="";
 }
+
+
+
+
+
