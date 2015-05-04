@@ -16,16 +16,16 @@
 
 	
 	<ul>
-	  <li><a id="homelink" href="index.html">Home</a></li>
-	  <li><a href="accommodation.html">Accommodation</a></li>
-	   <li onmouseover="showMenu()" onmouseout="hideMenu()"><a href="gallery.html" >Gallery</a>
+	  <li><a href="index.html">Home</a></li>
+	  <li><a onclick="pageLoad('accommodation')">Accommodation</a></li>
+	   <li onmouseover="showMenu()" onmouseout="hideMenu()"><a onclick="pageLoad('gallery')">Gallery</a>
 			<ul id="submenu" onmouseover="showMenu()" >
 				<li><a href="#">Orebic</a></li>
 				<li><a href="#">Apartments</a></li>
 			</ul>
 			</li>
-	  <li><a href="contact.html">Contact</a></li>
-	  <li><a href="links.html">Links</a></li>
+	  <li><a onclick="pageLoad('contact')">Contact</a></li>
+	  <li><a onclick="pageLoad('links')">Links</a></li>
 	</ul>
 	
 
@@ -35,7 +35,7 @@
 	<a id="linklogo" href="index.html"> <img id="logo" src="Images/slikalogo.png" alt="Logo" ></a>
 	</div>
 
-
+	<div id="wrapper">
 	<h1> About Us</h1>
 	
 	<hr id="linija1"/>
@@ -102,18 +102,20 @@
 	
 	</div>
 	
+	</div>
 
 	<div id="navbardole">
 	<ul>
 	  <li><a href="index.html">Home</a></li>
-	  <li><a href="accommodation.html">Accommodation</a></li>
-	  <li><a href="gallery.html">Gallery</a></li>
-	  <li><a href="contact.html">Contact</a></li>
-	  <li><a href="links.html">Links</a></li>
+	  <li><a onclick="pageLoad('accommodation')">Accommodation</a></li>
+	  <li><a onclick="pageLoad('gallery')">Gallery</a></li>
+	  <li><a onclick="pageLoad('contact')">Contact</a></li>
+	  <li><a onclick="pageLoad('links')">Links</a></li>
 	</ul>
 	</div>
 	<footer> Copyleft &copy; by Dino Hurem.</footer>
 	</div>
+	<script src="pageload.js"></script>
 	<script src="skripta.js"> </script>
 	</body>
 
