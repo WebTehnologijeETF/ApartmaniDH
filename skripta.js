@@ -133,7 +133,7 @@ function validirajDrzavu(){
 			
 		}
 		else if(req.status==404){
-			document.getElementById("errordrzava").innerHTML="Please enter a valid country.";
+			document.getElementById("errordrzava").innerHTML="Please enter a valid name.";
 			drzavaValidirana=false;
 			return false;
 		}
